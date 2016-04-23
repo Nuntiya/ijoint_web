@@ -1,0 +1,46 @@
+body{ margin: 20px; background: #eee; font-family: 'Open Sans', sans-serif; font-size: 14px; }
+.container{ margin: 0 auto; width: 100%; min-width: 960px; position: relative; }
+header{ text-align: center; padding: 40px 0; }
+input{ font-family: 'Open Sans', sans-serif; font-size: 14px; }
+a{ color: #3d728a; text-decoration: underline; }
+a:hover{ color: #4b9fc5; }
+a.btn{ color: #FFF; text-decoration: none; }
+a.btn:hover{ color: #FFF; }
+a img{ border: 0; }
+
+.box{
+	margin: 0 auto;
+	padding: 20px;
+	background: #FFF;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-bottom: 2px solid #DDD;
+}
+.circle{ border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; }
+
+.input{
+	padding: 10px;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.btn{
+	padding: 10px;
+	background: #3d718b;
+	color: #FFF;
+	cursor: pointer;
+	border: 0;
+	border-bottom: 2px solid #285c70;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-webkit-transition: background 0.4s, border-color 0.4s;
+	transition: background 0.4s, border-color 0.4s;
+}
+.btn:hover{ background: #4b9fc5; border-color: #4c91b0; }
+
+#sign_out_btn{ position: absolute; top: 0; right: 0; }
+
+footer{ text-align: center; margin-top: 30px; font-size: 11px; color: #666; }

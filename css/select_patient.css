@@ -1,0 +1,69 @@
+#body .instruction{ text-align: center; font-size: 22px; }
+
+#patient_list{ margin: 30px auto; text-align: center; }
+#patient_list .element{
+	display: inline-block;
+	width: 350px;
+	margin: 20px;
+	text-align: left;
+	padding: 0;
+	color: #000;
+	border: 0;
+}
+#patient_list .patient_info{
+	display: table;
+	width: 310px;
+	padding: 14px 20px;
+	background: #FFF;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	-webkit-transition: background 0.3s, color 0.2s;
+	transition: background 0.3s, color 0.2s;
+}
+#patient_list .patient_info .patient_gender{ display: table-cell; vertical-align: middle; width: 32px; padding-right: 10px; }
+#patient_list .patient_info .patient_name{ display: table-cell; vertical-align: middle; font-weight: 700; }
+#patient_list .patient_info .patient_name .age{
+	font-size: 11px;
+	font-weight: 300;
+	margin-left: 4px;
+	color: #666;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+#patient_list .patient_stat{
+	width: 310px;
+	display: table;
+	padding: 14px 20px;
+	font-weight: 700;
+	font-size: 12px;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 2px solid #DDD;
+	background: #FBFBFB;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	-webkit-transition: background 0.3s, color 0.2s, border-color 0.3s;
+	transition: background 0.3s, color 0.2s, border-color 0.3s;
+}
+#patient_list .patient_stat .label,
+#patient_list .patient_stat .bar,
+#patient_list .patient_stat .stat{
+	display: table-cell;
+	vertical-align: middle;
+}
+#patient_list .patient_stat .label{ width: 60px; }
+#patient_list .patient_stat .bar{ text-align: center; }
+#patient_list .patient_stat .bar .grey_bar{ display: inline-block; width: 160px; background: #CCC; height: 5px; }
+#patient_list .patient_stat .bar .complete_bar{ background: #8ec614; height: 5px; }
+#patient_list .patient_stat .stat{ width: 50px; text-align: left; font-size: 18px; }
+
+#patient_list .element:hover .patient_info{ background: #3f728b; color: #FFF; }
+#patient_list .element:hover .patient_info .age{ color: #FFF; }
+#patient_list .element:hover .patient_stat{ background: #2a5c71; color: #FFF; border-color: #1c4d62; }

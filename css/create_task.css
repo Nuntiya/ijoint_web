@@ -1,0 +1,73 @@
+#create_task{ width: 500px; margin: 0 auto; padding: 0 20px; }
+#create_task .head{ position: relative; }
+#create_task .headline{ font-weight: 700; font-size: 36px; }
+#create_task .sub_headline{ font-weight: 300; font-size: 14px; color: #666; }
+
+#form{
+	width: 500px;
+	margin-top: 10px;
+	border-bottom: 2px solid #DDD;
+	background: #FFF;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+#form .form_row{ overflow: hidden; width: 460px; padding: 14px 20px; }
+#form .form_row:not(:last-child){ border-bottom: 1px solid #DDD; }
+#form .form_row .label{ float: left; vertical-align: middle; width: 160px; font-weight: 700; padding-top: 10px; }
+#form .form_row .value{ float: left; vertical-align: middle; width: 300px; }
+#form .form_row .input{ padding: 6px 10px; }
+#form .form_row .num{ width: 100px; }
+#form .form_row .note{ margin-left: 10px; font-size: 12px; font-weight: 300; }
+#form .option{ width: 460px; text-align: center; }
+#form .create_task{ padding: 10px 30px; background: #8ec614; border-color: #6c9416; }
+#form .create_task:hover{ background: #a9d842; border-color: #8bbc1f; }
+
+.select{ 
+  display: inline-block; 
+  padding: 6px 10px;
+  background: #FFF; 
+  border: 1px solid #e3e2d7; 
+  border-radius: 2px; 
+  -moz-border-radius: 2px; 
+  -webkit-border-radius: 2px; 
+  width: 120px; 
+  -webkit-appearance:none; 
+  -moz-appearance:none; 
+  appearance:none; 
+  margin-bottom: 0; 
+  line-height: 20px; 
+  padding-right: 18px; 
+  outline: none; 
+  color: #555; 
+  font-family: OpenSans, sans-serif; 
+  font-size: 14px; 
+  cursor: pointer; 
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .select {padding-right:18px}
+}
+.select_label{ position: relative; outline: none; margin-bottom: 0; }
+.select_label:after{ 
+  content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top: 2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.select_label:before {
+    content:'';
+    right:6px; top:-5px;
+    width:10px; height:29px;
+    background:#FFF;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
